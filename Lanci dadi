@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2 dadi</title>
+
+
+
+</head>
+<body>
+<script>
+    let turni=0;
+function tiro(tur){
+    turni = tur;
+    var dad1 =dado1(6);
+    var dad2 =dado2(6);
+    document.getElementById("1").innerHTML = dad1;
+    document.getElementById("2").innerHTML = dad2;
+    turni= tur+1;
+    if (dad1==dad2){
+        alert("Hai appena vinto in "+turni+" turni, bravo. ");
+        turni =0
+    };
+    return turni
+    };
+   function dado1(n)
+    {
+    a=0;
+    a=Math.floor((Math.random()*n)+1);
+    return a;
+    };
+    function dado2(n)
+    {
+    b=0;
+    b=Math.floor((Math.random()*n)+1);
+    return b;
+    };
+    
+</script>
+<p>dado 1: </p><p id="1"></p>
+<p>dado 2: </p><p id="2"></p>
+<button  onclick= "return tiro(turni)" >Lancia i dadi</button>
+
+</body>
+</html>
+
