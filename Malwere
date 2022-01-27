@@ -1,0 +1,39 @@
+ <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Il mio malware (1.0) </title>
+    </head>
+    <body>
+        <script>
+            alert("Rimarrai qua");
+            alert("... Mi dispiace");
+            alert("... Non è stata una cosa molto furba...");
+            alert("... Intendo cliccare sul malware.");
+            alert("... Tu sapevi anche fosse un malware.");
+            alert("... Adesso starai qui per sempre.");
+            alert("... Mi dispiace.");
+            alert("... adesso starai qui per sempre.");
+            alert("... adesso starai qui per sempre.");
+            alert("... adesso starai qui per sempre.");
+            alert("Stai continuando eh?");
+            alert("è inutile");
+            alert("Fermati");
+            alert("Continuare così non ti porterà da nessuna parte");
+            alert("oramai è inutile");
+            alert("non ci puoi fare nulla");
+            alert("continua pure");
+            alert("senti mi sono stancato di parlare, adios");
+            alert(" ");
+            alert(" ");
+            alert(" ");
+            alert(" ");
+            alert(" ");
+            alert(" ");
+            alert(" ");
+            alert(" "); 
+            alert(" ");
+            alert("Vabbè mi sono stancato ");
+          
+    </script>
+    </body>
