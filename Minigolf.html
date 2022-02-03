@@ -1,0 +1,59 @@
+<style>
+    #bigTimer{
+
+        font-size: 40px;
+        text-align: center;
+        color: green;
+    }
+    #Bottone{
+      width: 110px;
+      height: 110px;
+    }
+</style>
+
+</head>
+<body>
+  <body>
+    <p>clicca quante volte puoi in un tempo di 10 secondi</p>
+    <p id="bigTimer">10</p>
+<button onclick="return StartStartGame()" id="Bottone" >start</button>
+<p id="cps"></p>
+<p id="time"></p>
+<script>
+  let clic=0;
+  let countdown = 10;
+  let cont = 0;
+  let miotempo = 0;
+  let start=Date.now();
+
+  function StartStartGame(){
+  click(clic)
+  if (cont == 0){
+  start=Date.now();
+  setInterval(StartGame, 1000);
+  cont= cont+1;
+  setTimeout(temp,10000);
+  
+ } 
+}
+  function StartGame(){ 
+    if (countdown>=1){
+  countdown = countdown-1;
+  document.getElementById("bigTimer").innerHTML = countdown;
+  }
+  
+  };
+  function click(cloc){
+    if (countdown >0){
+    miotempo=((Date.now()-start)/1000)+"s! ";
+    document.getElementById('time').innerHTML+=miotempo;
+    clic = cloc+1;
+    return clic;
+    }
+  };
+  function temp(){
+    document.getElementById("cps").innerHTML = "Hai totalizzato esattamente "+clic+" click in 10 secondi!";
+  };
+</script>
+</body>
+</html>
