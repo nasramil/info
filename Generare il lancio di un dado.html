@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lancio di un dado</title>
+</head>
+<body>
+<p>Adesso lancieremo il nostro dado</p>
+<button onclick="return dado()">Lancia il dado</button>
+<p>Iniziamo col generare un numero che varia tra 0 e 1</p>
+<p id="nuum"></p>
+<p>Lo moltiplichiamo * 6</p>
+<p id="nuum6"></p>
+<p>Prendiamo la parte intera del numero moltiplicato</p>
+<p id="nuumint"></p>
+<P>Ed infine gli aggiungiamo uno</P>
+<p id="nuum1"></p>
+<script>
+    function dado(){
+        let num= Math.random();
+        document.getElementById("nuum").innerHTML = num;
+        num = num*6;
+        document.getElementById("nuum6").innerHTML = num;
+        num = Math.floor(num);
+        document.getElementById("nuumint").innerHTML = num;
+        num = num+1;
+        document.getElementById("nuum1").innerHTML = num;
+    }
+</script>
+</body>
+</html>
